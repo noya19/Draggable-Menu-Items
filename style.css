@@ -1,0 +1,49 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background-color: blueviolet;
+    width: 350px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.dragable{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s linear;
+}
+
+.hide{
+    background: transparent;
+    color: transparent;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 2px snow;
+}
+
+.invisible{
+    visibility: hidden;
+}
